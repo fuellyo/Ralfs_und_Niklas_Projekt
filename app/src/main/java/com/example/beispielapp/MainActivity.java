@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btn = findViewById(R.id.btncheck);
-        final EditText et = findViewById(R.id.passfield);
-        final TextView tw = findViewById(R.id.textfield);
+        final EditText et = findViewById(R.id.etpassword);
+        final TextView tw = findViewById(R.id.tfanwort);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
