@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Button btn = findViewById(R.id.btncheck);
         final EditText et = findViewById(R.id.etpassword);
         final TextView tw = findViewById(R.id.tfanwort);
+        setTitle("Geben sie ein Passwort ein!");
+
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
