@@ -4,21 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StartActivity">
+    tools:context=".SecondActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/twText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
-        android:layout_marginLeft="170dp"
-        android:layout_marginTop="239dp"
-        android:layout_marginEnd="183dp"
-        android:layout_marginRight="183dp"
-        android:layout_marginBottom="473dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginRight="127dp"
+        android:layout_marginBottom="624dp"
         android:text="Ihr Passwort war Richtig!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnChecke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginLeft="134dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginRight="189dp"
+        android:layout_marginBottom="371dp"
+        android:text="Check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgAuswahl"
+        android:layout_width="93dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnChecke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twText">
+
+
+        <RadioButton
+            android:id="@+id/rbRitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ritter" />
+
+        <RadioButton
+            android:id="@+id/rbCowboy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cowboy" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
